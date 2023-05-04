@@ -1,0 +1,22 @@
+<div class="main">
+    <div class="d-flex">
+        <div class="img-container">
+            <img src="../../assets/welcome-dog.jpg" alt="" class="welcome-img">
+        </div>
+        <div class="login-container" [formGroup]="loginForm">
+            <div class="form-grp row">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="email" class="form-control" formControlName="name" placeholder="Ex: John">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" formControlName="email" placeholder="John123@example.com">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary primary-btn" (click)="onLetsGo()">Let's go</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
